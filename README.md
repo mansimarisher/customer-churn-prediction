@@ -1,8 +1,8 @@
-# Customer Churn Prediction 🔮
+# Customer Churn Prediction 
 
 A comprehensive machine learning pipeline to predict customer churn, providing actionable insights for business strategy.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Features](#-features)
@@ -16,44 +16,44 @@ A comprehensive machine learning pipeline to predict customer churn, providing a
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements a complete machine learning pipeline for customer churn prediction. It automatically:
 
-- 🧹 **Data Cleaning**: Handles missing values and removes unnecessary columns
-- 📊 **Exploratory Data Analysis**: Comprehensive data visualization and statistical analysis
-- ⚙️ **Feature Engineering**: Categorical encoding and numerical scaling
-- 🤖 **Model Training**: Trains multiple ML models (Random Forest, XGBoost, etc.)
-- 📈 **Performance Evaluation**: Detailed metrics and confusion matrices
-- 💼 **Business Insights**: Actionable recommendations and ROI analysis
-- 🚀 **Model Deployment**: Ready-to-use trained models
+-  **Data Cleaning**: Handles missing values and removes unnecessary columns
+-  **Exploratory Data Analysis**: Comprehensive data visualization and statistical analysis
+-  **Feature Engineering**: Categorical encoding and numerical scaling
+-  **Model Training**: Trains multiple ML models (Random Forest, XGBoost, etc.)
+-  **Performance Evaluation**: Detailed metrics and confusion matrices
+-  **Business Insights**: Actionable recommendations and ROI analysis
+-  **Model Deployment**: Ready-to-use trained models
 
-## ✨ Features
+##  Features
 
 ### Data Processing
-- ✅ Automatic missing value detection and imputation
-- ✅ Smart categorical feature encoding (Label/One-Hot)
-- ✅ Feature scaling with StandardScaler
-- ✅ Class imbalance handling with SMOTE
+-  Automatic missing value detection and imputation
+-  Smart categorical feature encoding (Label/One-Hot)
+-  Feature scaling with StandardScaler
+-  Class imbalance handling with SMOTE
 
 ### Machine Learning
-- ✅ Multiple algorithm comparison (Logistic Regression, Random Forest, Gradient Boosting, XGBoost)
-- ✅ Automated hyperparameter tuning with GridSearchCV
-- ✅ Cross-validation and model selection
-- ✅ Feature importance analysis
+-  Multiple algorithm comparison (Logistic Regression, Random Forest, Gradient Boosting, XGBoost)
+-  Automated hyperparameter tuning with GridSearchCV
+-  Cross-validation and model selection
+-  Feature importance analysis
 
 ### Evaluation & Visualization
-- ✅ Comprehensive performance metrics (Accuracy, Precision, Recall, F1-Score, AUC)
-- ✅ Confusion matrices and ROC curves
-- ✅ Feature correlation analysis
-- ✅ Business impact visualization
+-  Comprehensive performance metrics (Accuracy, Precision, Recall, F1-Score, AUC)
+-  Confusion matrices and ROC curves
+-  Feature correlation analysis
+-  Business impact visualization
 
 ### Business Intelligence
-- ✅ Customer risk segmentation (High/Medium/Low)
-- ✅ Retention strategy recommendations
-- ✅ ROI estimation and business impact analysis
+-  Customer risk segmentation (High/Medium/Low)
+-  Retention strategy recommendations
+-  ROI estimation and business impact analysis
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 customer-churn-prediction/
@@ -74,7 +74,7 @@ customer-churn-prediction/
 └── README.md                      # This file
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -102,7 +102,7 @@ customer-churn-prediction/
 4. **Open the main notebook**:
    Navigate to `notebooks/customer_churn_prediction.ipynb`
 
-## 📊 Data Requirements
+##  Data Requirements
 
 ### Required Format
 Your customer data should be a CSV file named `customer_data.csv` placed in the `data/` directory.
@@ -144,7 +144,7 @@ customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,Contract,
 3668-QPYBK,Male,0,No,No,2,Yes,Month-to-month,53.85,108.15,Yes
 ```
 
-## 💻 Usage
+##  Usage
 
 ### Basic Usage
 
@@ -187,7 +187,7 @@ def custom_imputation(df, column):
         return df[column].fillna(df[column].mode()[0])
 ```
 
-## 📈 Model Performance
+##  Model Performance
 
 ### Metrics Tracked
 - **Accuracy**: Overall prediction accuracy
@@ -208,15 +208,15 @@ The pipeline automatically selects the best-performing model based on F1-score, 
 - Gradient Boosting (sequential ensemble)
 - XGBoost (optimized gradient boosting)
 
-## 💡 Business Insights
+##  Business Insights
 
 ### Customer Segmentation
 
 The model automatically segments customers into risk categories:
 
-- 🔴 **High Risk** (>70% churn probability): Immediate intervention needed
-- 🟡 **Medium Risk** (30-70% churn probability): Proactive engagement
-- 🟢 **Low Risk** (<30% churn probability): Standard retention strategies
+-  **High Risk** (>70% churn probability): Immediate intervention needed
+-  **Medium Risk** (30-70% churn probability): Proactive engagement
+-  **Low Risk** (<30% churn probability): Standard retention strategies
 
 ### Typical Important Features
 
@@ -233,7 +233,7 @@ Example business impact (with $1000 average customer value):
 - **Annual Potential Impact**: $600,000 - $1,200,000
 - **Intervention Success Rate**: Assumes 50% retention success
 
-## 🚀 Deployment
+##  Deployment
 
 ### Saved Model Artifacts
 
@@ -277,7 +277,7 @@ def predict_churn(new_customer_data):
 3. **Feature Drift**: Monitor for changes in feature distributions
 4. **Threshold Optimization**: A/B test different probability thresholds
 
-## 🔄 Model Updates
+##  Model Updates
 
 ### Retraining Schedule
 - **Frequency**: Monthly
@@ -292,7 +292,7 @@ if current_performance['f1_score'] < 0.70:
     trigger_retraining()
 ```
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -322,7 +322,7 @@ print(f"Duplicate rows: {df.duplicated().sum()}")
 print(f"Target distribution: {df['Churn'].value_counts()}")
 ```
 
-## 📚 Dependencies
+##  Dependencies
 
 ### Core Libraries
 - **pandas**: Data manipulation and analysis
@@ -335,7 +335,7 @@ print(f"Target distribution: {df['Churn'].value_counts()}")
 ### Complete List
 See `requirements.txt` for full dependency list with version requirements.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please:
 
@@ -353,23 +353,24 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-## 📞 Support
+##  Support
 
 For questions or issues:
 1. Check the troubleshooting section above
 2. Review the notebook comments and markdown cells
 3. Create an issue in the repository
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🏆 Acknowledgments
+##  Acknowledgments
 
 - Built using scikit-learn and XGBoost
 - Inspired by industry best practices in churn prediction
 - Designed for business practitioners and data scientists
 
 ---
+
 
 **Ready to predict churn? Place your data in the `data/` directory and run the notebook!** 🚀
